@@ -48,7 +48,6 @@ class MemoFormVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
     let alertV = UIViewController()
     let iconImage = UIImage(named: "warning-icon-60")
     alertV.view = UIImageView(image: iconImage)
-    // 이미지가 없거나 잘못된 이미지일 경우 빈 영역이 표시되는 문제를 방지하기 위해서 이미지 사이즈가 nil일때는 CGSize.zero를 사용하여 사이즈 정보를 초기화한다. --> ??
     alertV.preferredContentSize = iconImage?.size ?? CGSize.zero
     
     // ① 내용을 입력하지 않았을 경우, 경고한다.
